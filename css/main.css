@@ -1,0 +1,244 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height:auto;
+}
+
+html {
+    font-size: 10px;
+}
+
+h1{
+    font-family: Frank Ruhl Libre Black, serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: calc(1rem + 5vmin);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-family: Frank Ruhl Libre Black, serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: calc(.5rem + 4vmin);
+}
+
+h3 {
+    font-family: Frank-Ruhl-Libre, serif;
+    color: var(--dark-blue);
+    font-style: normal;
+    font-weight: bold;
+    line-height: 2.4rem;
+    font-size: 2rem;
+}
+
+h4{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+    letter-spacing: 3.55556px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h5{
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 1.8rem;
+text-transform: uppercase;
+letter-spacing: 3.55556px;
+}
+
+h6{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--dark-orange);
+    line-height: 2.3rem;
+    margin:0;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+media all and (min-wdith:800px){
+    h1{
+        font-size: 5.2rem;
+    }
+}
+
+p,ul {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+/*<-------------------- Menu ----------------------->*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+}
+
+.logo{
+    max-width: 4rem;
+}
+
+header nav{
+    font-size: 1.rem;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    margin-left: 1rem;
+    font-size: 1.4rem;
+}
+
+header nav a:nth-of-type(1){
+    margin-left: 0;
+}
+
+.current {
+    color: var(--dark-orange);
+    font-weight: bold;
+}
+
+
+/*<-------------------- Footer ----------------------->*/
+footer{
+    padding-top: 7rem;
+}
+.contact{
+    text-align: center;
+}
+
+.footer1 p{
+    line-height: 3.1rem;
+    font-size: 2.2rem;
+    padding: 0 2rem 2rem 2rem;
+    background: linear-gradient(to right,#F7BA8F,#CC7C92);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 700;
+}
+
+@media all (min-width 700px){
+    .contact p{
+        max-width: 57rem;
+        margin: 0 auto;
+    }
+}
+
+
+.email{
+    font-size: 1.8rem;
+}
+
+.contact-icons{
+    padding-top: 4rem;
+}
+
+.contact-icons a{
+    color: var(--white);
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+
+.contact-icons a:nth-of-type(1){
+    margin-left: 0;
+}
+
+.return-top{
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+    font-size: 1.8rem;
+    display: grid;
+    grid-column: 1 fr;
+}
+
+.return-top a{
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.icon.ion-md-arrow-up{
+    font-size: 3rem;
+    padding: 1rem;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.footer2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+}
+
+.contact-icons{
+    text-align: right;
+    padding-top: 0;
+    color: var(--light-orange)
+}
+
+.contact-icons a{
+    color: var(--light-orange)
+}
+
+@media all and (max-width:700px){
+    .footer2{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer2 p{
+        font-size: 1.4rem;
+    }
+
+    .contact-icons {
+        text-align: center;
+    }
+}
+
+/*<--------------------- Colors ------------------------>*/
+.orange-l {color: var(--light-orange);}
+.orange-d {color: var(--dark-orange);}
+.blue-l {color: var(--blue);}
+.blue-d {color: var(--dark-blue);}
+.white {color: var(--white);}
+
+.bg-orange-d {background-color: var(--dark-orange);}
+.bg-orange-l {background-color: var(--light-orange);}
+.bg-blue-l {background-color: var(--blue);}
+.bg-blue-d {background-color: var(--dark-blue);}
+.bg-white {background-color: var(--white);}
+
+:root{--light-orange:#F7B18F;}
+:root{--dark-blue:#0B0033;}
+:root{--dark-orange:#F05D5E;}
+:root{--blue:#5386E4;}
+:root{--white:#FFFFFF;}
+:root{--gradient:(#F05D5E 0.66%, #F7BA8F 62.4%;}
