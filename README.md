@@ -1,1 +1,0 @@
-# rubyana-lyon.github.io
